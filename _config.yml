@@ -9,7 +9,7 @@ name: Olin Data Science Course Finder
 description: A tool to help Olin students register for classes
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: images/jekyll-logo.png
+avatar: https://www.parchment.com/c/images/college/1743-crest-250-200-219180101beadea2280ac0528953715c.png
 
 #
 # Flags below are optional
