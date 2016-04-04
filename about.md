@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### Who We Are
 
-### More Information
+We are a team of students at Franklin W. Olin College of Engineering. We wanted to let students at our school have a simpler time registering for classes and decided to make a tool for that. We are basing our tool upon statistics and data analysis, and hope we make the students' lives easier.
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[tjameskim22@gmail.com](mailto:tjameskim22@gmail.com)
+### Members
+Isaac Getto
+Jee Hyun Kim
+TJ Kim
