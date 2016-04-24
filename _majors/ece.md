@@ -1,6 +1,7 @@
 ---
 layout: major
 title: Electrical Engineering
+permalink: ece/
 ---
 
 ### Electrical & Computer Engineering

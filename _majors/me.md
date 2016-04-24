@@ -1,15 +1,14 @@
 ---
 layout: major
-title: MechanicalEngineering
+title: Mechanical Engineering
+permalink: /me/
 ---
 
 ### Mechanical Engineering
 
 ![Mechanical Engineering]({{ site.baseurl }}/images/me_sw.png "Mechanical Engineering")
 
-<!-- ### Electrical & Computer Engineering
-
-![Electrical & Computer Engineering]({{ site.baseurl }}/images/ece_sw.png "Electrical & Computer Engineering")
+<!-- 
 
 ### Engineering: Computer Science
 
