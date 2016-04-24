@@ -16,12 +16,15 @@ permalink: /major_test/
 	<script>
 	function search(){
 		var x = document.getElementById("selectmajor").selectedIndex;
-		alert(document.getElementsByTagName("option")[x].value;)
+		alert(document.getElementsByTagName("option")[x].value);
 	}
 	</script>
 
+	<h1>$( "#selectmajor option:selected" ).text()</h1>
+	<h1>$( "#selectmajor" ).val()</h1>
+
 	<h1>Mechanical Engineering</h1>
-	<img src="{{ site.baseurl }}/images/"+"me_sw.png"> </img>
+	<img src=strcat("{{ site.baseurl }}/images/","me_sw.png")> </img>
 
 	<h1>Electrical & Computer Engineering</h1>
 	<img src="{{ site.baseurl }}/images/me_sw.png"> </img>
