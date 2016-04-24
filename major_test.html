@@ -9,34 +9,52 @@ permalink: /major_test/
     }
 	function search(){
 		var x = document.getElementById("selectmajor").selectedIndex;
-		// alert(document.getElementsByTagName("option")[x].value);
-		// var majorshort = document.getElementsByTagName("option")[x].value;
-		// var majorlong = document.getElementsByTagName("option")[x].text;
-
 		return x.value
 	}
-	function showMajor(major) {
-        var figures = document.getElementById('figures');
-        var child = document.getElementById('p1');
-
-        var para = document.createElement("p");
-        para.id = "p1";
-        var text = document.createTextNode("{{ site.baseurl }}/images/"+major +"_sw.png");
-        
-        para.appendChild(text);
-        figs.replaceChild(para, child);
+    function showMajor(major) {
+        updateMajor(major);
+        updateMajorPlot(courseName);
+    }
+    function updateMajor(major) {
+        var title = document.getElementById('major');
+        title.textContent = major;
+    }
+    function updateMajorPlot(major) {
+        var desc = document.getElementById('p1')
+        desc.textContent = major + " was selected!";
     }
 </script>
 
-<div>
-	Major: 
-	<select id = 'selectmajor'>
-	  <option value="me">Mechanical Engineering</option>
-	  <option value="ece">Electrical & Computer Engineering</option>
-	  <option value="cs">Engineering: Computer Science</option>
-	</select>
+<script>
+    function updatePage() {
+        var course = getCourse();
+        showCourse(course);
+    }
+    function getCourse() {
+        var element = document.getElementById('course-select');
+        return element.value;
+    }
+    function showCourse(courseName) {
+        updateCourseTitle(courseName);
+        updateCourseDescription(courseName);
+    }
+    function updateCourseTitle(courseName) {
+        var title = document.getElementById('course-title');
+        title.textContent = courseName;
+    }
+    function updateCourseDescription(courseName) {
+        var desc = document.getElementById('p1')
+        desc.textContent = courseName + " was selected!";
+    }
+</script>
 
-	<button type="button" onclick="update()">Search</button>
+<select id = 'selectmajor'>
+	<option value="me">Mechanical Engineering</option>
+	<option value="ece">Electrical & Computer Engineering</option>
+	<option value="cs">Engineering: Computer Science</option>
+</select>
+
+<button type="button" onclick="update()">Search</button>
 
 <!-- 	<section>
 		<h1>Mechanical Engineering</h1>
@@ -49,9 +67,8 @@ permalink: /major_test/
 
 	<h1>Engineering: Computer Science</h1>
 	<img src="{{ site.baseurl }}/images/me_sw.png"> </img> -->
-</div>
 
 <div id="figures">
-    <h2>Figures</h2>
+    <h2 id='major'></h2>
     <p id="p1"></p>
 </div>
