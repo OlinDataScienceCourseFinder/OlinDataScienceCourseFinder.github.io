@@ -6,53 +6,53 @@ permalink: /test2/
   <div id="chart"></div>
   <script src="../d3.min.js"></script>
     <script>
-      (function draw_pi(data) {
-        'use strict';
+      // (function draw_pi(data) {
+      //   'use strict';
 
-        var dataset = [
-          { label: 'SCOPE', count: data.SCOPE}, 
-          { label: 'ADE', count: data.ADE}
-        ];
+      //   var dataset = [
+      //     { label: 'SCOPE', count: data.SCOPE}, 
+      //     { label: 'ADE', count: data.ADE}
+      //   ];
 
-        var width = 360;
-        var height = 360;
-        var radius = Math.min(width, height) / 2;
+      //   var width = 360;
+      //   var height = 360;
+      //   var radius = Math.min(width, height) / 2;
 
-        var color = d3.scale.category20b();
+      //   var color = d3.scale.category20b();
 
-        var svg = d3.select('#chart')
-          .append('svg')
-          .attr('width', width)
-          .attr('height', height)
-          .append('g')
-          .attr('transform', 'translate(' + (width / 2) + 
-            ',' + (height / 2) + ')');
+      //   var svg = d3.select('#chart')
+      //     .append('svg')
+      //     .attr('width', width)
+      //     .attr('height', height)
+      //     .append('g')
+      //     .attr('transform', 'translate(' + (width / 2) + 
+      //       ',' + (height / 2) + ')');
 
-        var arc = d3.svg.arc()
-          .outerRadius(radius);
+      //   var arc = d3.svg.arc()
+      //     .outerRadius(radius);
 
-        var pie = d3.layout.pie()
-          .value(function(d) { return d.count; })
-          .sort(null);
+      //   var pie = d3.layout.pie()
+      //     .value(function(d) { return d.count; })
+      //     .sort(null);
 
-        var path = svg.selectAll('path')
-          .data(pie(dataset))
-          .enter()
-          .append('path')
-          .attr('d', arc)
-          .attr('fill', function(d, i) { 
-            return color(d.data.label);
-          });
+      //   var path = svg.selectAll('path')
+      //     .data(pie(dataset))
+      //     .enter()
+      //     .append('path')
+      //     .attr('d', arc)
+      //     .attr('fill', function(d, i) { 
+      //       return color(d.data.label);
+      //     });
 
-      })(window.d3);
+      // })(window.d3);
 
       function type(d){
-        d.ADE = +d[0].ADE;
-        d.SCOPE = +d[0].SCOPE;
+        d.ADE = +d.ADE;
+        d.SCOPE = +d.SCOPE;
       }
 
       function render(d){
-        console.log(d.ADE + d.SCOPE)
+        console.log(d[0].ADE + d[0].SCOPE)
       }
 
       d3.csv("../data/capstone.csv", type, render)
