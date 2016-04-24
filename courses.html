@@ -28,7 +28,7 @@ permalink: /courses/
     }
     function showCourseSpider(courseName) {
         base_file_name = "{{ site.baseurl }}/" + 'images/courses/spider/';
-        safe_course_name = courseName.replace(/[ \/]+/g, '_');
+        safe_course_name = courseName.replace(/[\W]+/g, '_');
         file_name = base_file_name + safe_course_name + '.png';
         console.log(safe_course_name);
 
