@@ -10,11 +10,11 @@ permalink: /test2/
     (function(d3) {
         'use strict';
 
-    d3.csv("../data/capstone.csv", function(error, data) {
-      data.forEach(function(cap) {
-          cap.ADE = +cap.ADE;
-          cap.SCOPE = +cap.SCOPE;
-      });
+    // d3.csv("../data/capstone.csv", function(error, data) {
+    //   data.forEach(function(cap) {
+    //       cap.ADE = +cap.ADE;
+    //       cap.SCOPE = +cap.SCOPE;
+    //   });
 
         var dataset = [
           { label: 'SCOPE', count: 9}, 
@@ -52,7 +52,7 @@ permalink: /test2/
           .attr('fill', function(d, i) { 
             return color(d.data.label);
           });
-      });
+      // });
     })(window.d3);
   </script>
 </body>
