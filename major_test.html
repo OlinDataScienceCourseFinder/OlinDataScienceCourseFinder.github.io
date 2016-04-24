@@ -9,19 +9,24 @@ permalink: /major_test/
     }
 	function search(){
 		var x = document.getElementById("selectmajor");
-		return x.value
+		return x
 	}
     function showMajor(major) {
-        updateMajor(major);
-        updateMajorPlot(major);
+        updateMajor(major.text);
+        updateMajorText(major.value);
+        updateMajorPlot(major.value);
     }
-    function updateMajor(major) {
+    function updateMajor(majortext) {
         var title = document.getElementById('major');
-        title.textContent = major;
+        title.textContent = majortext;
     }
-    function updateMajorPlot(major) {
+    function updateMajorText(majorvalue) {
+        var desc = document.getElementById('t1')
+        desc.textContent = "{{ site.baseurl }}/images/"+majorvalue+"_sw.png"
+    }
+    function updateMajorPlot(majorvalue) {
         var desc = document.getElementById('p1')
-        desc.textContent = major + " was selected!";
+        desc.src = "{{ site.baseurl }}/images/"+majorvalue+"_sw.png"
     }
 </script>
 
@@ -47,5 +52,6 @@ permalink: /major_test/
 
 <div id="figures">
     <h2 id='major'></h2>
-    <p id="p1"></p>
+    <p id="t1"></p>
+    <img id="p1"></img>
 </div>
