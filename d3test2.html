@@ -10,8 +10,8 @@ permalink: /test2/
         'use strict';
 
         var dataset = [
-          { label: 'SCOPE', count: data[0].SCOPE}, 
-          { label: 'ADE', count: data[0].ADE}
+          { label: 'SCOPE', count: data.SCOPE}, 
+          { label: 'ADE', count: data.ADE}
         ];
 
         var width = 360;
@@ -47,8 +47,8 @@ permalink: /test2/
       })(window.d3);
 
       function type(d){
-        d.ADE = +d.ADE;
-        d.SCOPE = +d.SCOPE;
+        d.ADE = +d[0].ADE;
+        d.SCOPE = +d[0].SCOPE;
       }
 
       d3.csv("../data/capstone.csv", type, draw_pi)
