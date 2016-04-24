@@ -13,14 +13,17 @@ permalink: /test2/
   <div id="chart"></div>
   <script src="../d3.min.js"></script>
   <script>
+    d3.csv("../data/capstone.csv", function(error, data) {
+      data.forEach(function(d) {
+          d.ADE = +d.ADE;
+          d.SCOPE = +d.SCOPE;
+      });
     (function(d3) {
       'use strict';
 
       var dataset = [
-        { label: 'Abulia', count: 10 }, 
-        { label: 'Betelgeuse', count: 20 },
-        { label: 'Cantaloupe', count: 30 },
-        { label: 'Dijkstra', count: 40 }
+        { label: 'SCOPE', count: d.ADE[1] }, 
+        { label: 'ADE', count: d.SCOPE[1] }
       ];
 
       var width = 360;
