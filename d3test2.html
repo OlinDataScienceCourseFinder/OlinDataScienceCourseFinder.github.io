@@ -7,14 +7,14 @@ permalink: /test2/
   <div id="chart"></div>
   <script src="../d3.min.js"></script>
   <script>
+    (function(d3) {
+        'use strict';
+
     d3.csv("../data/capstone.csv", function(error, data) {
       data.forEach(function(cap) {
           cap.ADE = +cap.ADE;
           cap.SCOPE = +cap.SCOPE;
       });
-
-      (function(d3) {
-        'use strict';
 
         var dataset = [
           { label: 'SCOPE', count: 9}, 
@@ -52,8 +52,7 @@ permalink: /test2/
           .attr('fill', function(d, i) { 
             return color(d.data.label);
           });
-
-      })(window.d3);
-    });
+      });
+    })(window.d3);
   </script>
 </body>
