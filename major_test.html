@@ -5,7 +5,10 @@ permalink: /major_test/
 <script>
 	function search(){
 		var x = document.getElementById("selectmajor").selectedIndex;
-		alert(document.getElementsByTagName("option")[x].value);
+		// alert(document.getElementsByTagName("option")[x].value);
+		var majorshort = document.getElementsByTagName("option")[x].value;
+		var majorlong = document.getElementsByTagName("option")[x].text;
+		var link = concat('{{ site.baseurl }}/images/', majorshort, '_sw.png')
 	}
 </script>
 
@@ -19,15 +22,15 @@ permalink: /major_test/
 
 	<button type="button" onclick="search()">Search</button>
 
-	<h1>$( "#selectmajor option:selected" ).text()</h1>
-	<h1>$( "#selectmajor" ).val()</h1>
+	<section>
+		<h1>test</h1>
+		<img src=link> </img>
+	</section>
+	<section>
+		<h1>Electrical & Computer Engineering</h1>
+		<img src="{{ site.baseurl }}/images/me_sw.png"> </img>
+	</section>	
 
-	<h1>Mechanical Engineering</h1>
-	<img src=concat("{{ site.baseurl }}/images/","me_sw.png")> </img>
-
-	<h1>Electrical & Computer Engineering</h1>
-	<img src="{{ site.baseurl }}/images/me_sw.png"> </img>
-
-	<h1>Engineering: Computer Science</h1>
-	<img src="{{ site.baseurl }}/images/me_sw.png"> </img>
+	<!-- <h1>Engineering: Computer Science</h1>
+	<img src="{{ site.baseurl }}/images/me_sw.png"> </img> -->
 </div>
