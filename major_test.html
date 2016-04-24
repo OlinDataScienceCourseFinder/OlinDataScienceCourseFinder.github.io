@@ -12,7 +12,7 @@ permalink: /major_test/
 		return x
 	}
     function showMajor(major) {
-        updateMajor(major.text);
+        updateMajor(major.textContent);
         // updateMajorText(major.value);
         updateMajorPlot(major.value);
     }
@@ -34,6 +34,11 @@ permalink: /major_test/
 	<option value="me">Mechanical Engineering</option>
 	<option value="ece">Electrical & Computer Engineering</option>
 	<option value="cs">Engineering: Computer Science</option>
+	<option value="bio">Engineering: Bioengineering</option>
+	<option value="design">Engineering: Design</option>
+	<option value="robo">Engineering: Robotics</option>
+	<option value="system">Engineering: Systems</option>
+	<option value="matsci">Engineering: Material Science</option>
 </select>
 
 <button type="button" onclick="update()">Search</button>
