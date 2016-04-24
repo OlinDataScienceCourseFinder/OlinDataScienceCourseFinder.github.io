@@ -3,18 +3,18 @@ layout: default
 permalink: /major_test/
 ---
 
+<div>
+	<select>
+	  <option value="me">Mechanical Engineering</option>
+	  <option value="ece">Electrical & Computer Engineering</option>
+	  <option value="cs">Engineering: Computer Science</option>
+	</select>
+	<h1>Mechanical Engineering</h1>
+	<img src="{{ site.baseurl }}/images/me_sw.png"> </img>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+	<h1>Electrical & Computer Engineering</h1>
+	<img src="{{ site.baseurl }}/images/me_sw.png"> </img>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+	<h1>Engineering: Computer Science</h1>
+	<img src="{{ site.baseurl }}/images/me_sw.png"> </img>
 </div>
