@@ -4,7 +4,7 @@ title: Major
 permalink: /major/
 ---
 <div class="majors">
-  {% for major in site.majorss %}
+  {% for major in site.majors %}
     <article class="major">
 
       <h1><a href="{{ site.baseurl }}{{ major.url }}">{{ major.title }}</a></h1>
