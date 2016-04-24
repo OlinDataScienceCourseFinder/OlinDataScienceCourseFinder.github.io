@@ -27,7 +27,7 @@ permalink: /courses/
         desc.textContent = courseName + " was selected!";
     }
     function showCourseSpider(courseName) {
-        base_file_name = 'images/courses/spider/';
+        base_file_name = "{{ site.baseurl }}/" + 'images/courses/spider/';
         safe_course_name = courseName.replace(/[ \/]+/, '_');
         file_name = base_file_name + safe_course_name + '.png';
         console.log(safe_course_name);
