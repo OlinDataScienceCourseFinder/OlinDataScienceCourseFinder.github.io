@@ -1,5 +1,5 @@
 ---
-layout: major
+layout: page
 title: Mechanical Engineering
 permalink: /me/
 ---

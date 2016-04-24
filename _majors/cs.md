@@ -1,5 +1,5 @@
 ---
-layout: major
+layout: post
 title: Engineering: Computer Science
 ---
 

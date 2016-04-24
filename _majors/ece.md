@@ -1,5 +1,5 @@
 ---
-layout: major
+layout: page
 title: Electrical Engineering
 permalink: ece/
 ---
