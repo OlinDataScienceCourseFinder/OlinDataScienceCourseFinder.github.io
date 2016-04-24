@@ -16,7 +16,7 @@ permalink: /courses/
     function showCourse(courseName) {
         var figs = document.getElementById('figures');
 
-        var para = document.createNode("p");
+        var para = document.createElement("p");
         var text = document.createTextNode(courseName + " was selected!");
         para.appendChild(text);
 
