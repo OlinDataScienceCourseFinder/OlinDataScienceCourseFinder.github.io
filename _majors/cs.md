@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Engineering: Computer Science
+permalink: /cs/
 ---
 
 ### Engineering: Computer Science
