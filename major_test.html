@@ -4,13 +4,24 @@ permalink: /major_test/
 ---
 
 <div>
-	<select>
+	Major: 
+	<select id = 'selectmajor'>
 	  <option value="me">Mechanical Engineering</option>
 	  <option value="ece">Electrical & Computer Engineering</option>
 	  <option value="cs">Engineering: Computer Science</option>
 	</select>
+
+	<button type="button" onclick="search()">Search</button>
+
+	<script>
+	function search(){
+		var x = document.getElementById("selectmajor").selectedIndex;
+		alert(document.getElementsByTagName("option")[x].value;)
+	}
+	</script>
+
 	<h1>Mechanical Engineering</h1>
-	<img src="{{ site.baseurl }}/images/me_sw.png"> </img>
+	<img src="{{ site.baseurl }}/images/"+"me_sw.png"> </img>
 
 	<h1>Electrical & Computer Engineering</h1>
 	<img src="{{ site.baseurl }}/images/me_sw.png"> </img>
