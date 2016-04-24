@@ -8,11 +8,11 @@ permalink: /major_test/
         showMajor(major);
     }
 	function search(){
-		var x = document.getElementById("selectmajor").selectedIndex;
+		var x = document.getElementById("selectmajor");
 		return x
 	}
     function showMajor(major) {
-        updateMajor(major.text);
+        updateMajor(major[major.selectedIndex].text);
         // updateMajorText(major.value);
         updateMajorPlot(major.value);
     }
