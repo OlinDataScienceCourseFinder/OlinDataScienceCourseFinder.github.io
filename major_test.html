@@ -13,17 +13,17 @@ permalink: /major_test/
 	}
     function showMajor(major) {
         updateMajor(major.text);
-        updateMajorText(major.value);
+        // updateMajorText(major.value);
         updateMajorPlot(major.value);
     }
     function updateMajor(majortext) {
-        var title = document.getElementById('major');
-        title.textContent = majortext;
+        var title = document.getElementById('h1');
+        title.textContent = "Major:" + majortext;
     }
-    function updateMajorText(majorvalue) {
-        var desc = document.getElementById('t1')
-        desc.textContent = "{{ site.baseurl }}/images/"+majorvalue+"_sw.png"
-    }
+    // function updateMajorText(majorvalue) {
+    //     var desc = document.getElementById('t1')
+    //     desc.textContent = "{{ site.baseurl }}/images/"+majorvalue+"_sw.png"
+    // }
     function updateMajorPlot(majorvalue) {
         var desc = document.getElementById('p1')
         desc.src = "{{ site.baseurl }}/images/"+majorvalue+"_sw.png"
@@ -51,7 +51,7 @@ permalink: /major_test/
 	<img src="{{ site.baseurl }}/images/me_sw.png"> </img> -->
 
 <div id="figures">
-    <h2 id='major'></h2>
+    <h2 id='h1'></h2>
     <p id="t1"></p>
     <img id="p1"></img>
 </div>
