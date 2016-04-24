@@ -51,6 +51,10 @@ permalink: /test2/
         d.SCOPE = +d[0].SCOPE;
       }
 
-      d3.csv("../data/capstone.csv", type, draw_pi)
+      function render(d){
+        console.log(d.ADE + d.SCOPE)
+      }
+
+      d3.csv("../data/capstone.csv", type, render)
     </script>
   </body>
