@@ -15,12 +15,13 @@ permalink: /courses/
     }
     function showCourse(courseName) {
         var figs = document.getElementById('figures');
+        var child = document.getElementById('p1');
 
         var para = document.createElement("p");
         var text = document.createTextNode(courseName + " was selected!");
         para.appendChild(text);
 
-        figs.appendChild(para);
+        figs.replaceChild(para, child);
     }
 </script>
 
@@ -1643,4 +1644,5 @@ permalink: /courses/
 
 <div id="figures">
     <h2>Figures</h2>
+    <p id="p1"></p>
 </div>
