@@ -13,7 +13,7 @@ permalink: /major_test/
 	}
     function showMajor(major) {
         updateMajor(major);
-        updateMajorPlot(courseName);
+        updateMajorPlot(major);
     }
     function updateMajor(major) {
         var title = document.getElementById('major');
@@ -22,29 +22,6 @@ permalink: /major_test/
     function updateMajorPlot(major) {
         var desc = document.getElementById('p1')
         desc.textContent = major + " was selected!";
-    }
-</script>
-
-<script>
-    function updatePage() {
-        var course = getCourse();
-        showCourse(course);
-    }
-    function getCourse() {
-        var element = document.getElementById('course-select');
-        return element.value;
-    }
-    function showCourse(courseName) {
-        updateCourseTitle(courseName);
-        updateCourseDescription(courseName);
-    }
-    function updateCourseTitle(courseName) {
-        var title = document.getElementById('course-title');
-        title.textContent = courseName;
-    }
-    function updateCourseDescription(courseName) {
-        var desc = document.getElementById('p1')
-        desc.textContent = courseName + " was selected!";
     }
 </script>
 
