@@ -12,12 +12,13 @@ permalink: /test2/
           d.ADE = +d.ADE;
           d.SCOPE = +d.SCOPE;
       });
+
       (function(d3) {
         'use strict';
 
         var dataset = [
-          { label: 'SCOPE', count: d.ADE[1] }, 
-          { label: 'ADE', count: d.SCOPE[1] }
+          { label: 'SCOPE', count: function(d) { return d.ADE[1]; }}, 
+          { label: 'ADE', count: function(d) { return d.SCOPE[1]; }}
         ];
 
         var width = 360;
