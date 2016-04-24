@@ -14,15 +14,16 @@ permalink: /courses/
         return element.value;
     }
     function showCourse(courseName) {
-        var figs = document.getElementById('figures');
-        var child = document.getElementById('p1');
-
-        var para = document.createElement("p");
-        para.id = "p1";
-        var text = document.createTextNode(courseName + " was selected!");
-        para.appendChild(text);
-
-        figs.replaceChild(para, child);
+        updateCourseTitle(courseName);
+        updateCourseDescription(courseName);
+    }
+    function updateCourseTitle(courseName) {
+        var title = document.getElementById('course-title');
+        title.textContent = courseName;
+    }
+    function updateCourseDescription(courseName) {
+        var desc = document.getElementById('p1')
+        desc.textContent = courseName + " was selected!";
     }
 </script>
 
@@ -1644,6 +1645,6 @@ permalink: /courses/
 </select>
 
 <div id="figures">
-    <h2>Figures</h2>
+    <h2 id='course-title'></h2>
     <p id="p1"></p>
 </div>
