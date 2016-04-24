@@ -14,16 +14,26 @@ permalink: /courses/
         return element.value;
     }
     function showCourse(courseName) {
-        updateCourseTitle(courseName);
-        updateCourseDescription(courseName);
+        showCourseTitle(courseName);
+        showCourseDescription(courseName);
+        showCourseSpider(courseName);
     }
-    function updateCourseTitle(courseName) {
+    function showCourseTitle(courseName) {
         var title = document.getElementById('course-title');
         title.textContent = courseName;
     }
-    function updateCourseDescription(courseName) {
+    function showCourseDescription(courseName) {
         var desc = document.getElementById('p1')
         desc.textContent = courseName + " was selected!";
+    }
+    function showCourseSpider(courseName) {
+        base_file_name = 'images/courses/spider/';
+        safe_course_name = courseName.replace(/[ \/]+/, '_');
+        file_name = base_file_name + safe_course_name;
+        console.log(safe_course_name);
+
+        var spider = document.getElementById('spider');
+        spider.src = file_name;
     }
 </script>
 
@@ -523,4 +533,5 @@ permalink: /courses/
 <div id="figures">
     <h2 id='course-title'></h2>
     <p id="p1"></p>
+    <img id='spider'></img>
 </div>
