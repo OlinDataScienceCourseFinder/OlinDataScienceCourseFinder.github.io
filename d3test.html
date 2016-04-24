@@ -1,53 +1,7 @@
 ---
 layout: default
-permalink: /major/
+permalink: /test/
 ---
-<script>
-	function update() {
-        var major = search();
-        showMajor(major);
-    }
-	function search(){
-		var x = document.getElementById("selectmajor");
-		return x
-	}
-    function showMajor(major) {
-        updateMajor(major[major.selectedIndex].text);
-        // updateMajorText(major.value);
-        updateMajorPlot(major.value);
-    }
-    function updateMajor(majortext) {
-        var title = document.getElementById('h1');
-        title.textContent = "Major:" + majortext;
-    }
-    // function updateMajorText(majorvalue) {
-    //     var desc = document.getElementById('t1')
-    //     desc.textContent = "{{ site.baseurl }}/images/"+majorvalue+"_sw.png"
-    // }
-    function updateMajorPlot(majorvalue) {
-        var desc = document.getElementById('p1')
-        desc.src = "{{ site.baseurl }}/images/"+majorvalue+"_sw.png"
-    }
-</script>
-
-<select id = 'selectmajor'>
-	<option value="me">Mechanical Engineering</option>
-	<option value="ece">Electrical & Computer Engineering</option>
-	<option value="cs">Engineering: Computer Science</option>
-	<option value="bio">Engineering: Bioengineering</option>
-	<option value="design">Engineering: Design</option>
-	<option value="robo">Engineering: Robotics</option>
-	<option value="system">Engineering: Systems</option>
-	<option value="matsci">Engineering: Material Science</option>
-</select>
-
-<button type="button" onclick="update()">Search</button>
-
-<div id="figures">
-    <h3 id='h1'></h3>
-    <p id="t1"></p>
-    <img id="p1"></img>
-</div>
 
 <head>
  <style>
