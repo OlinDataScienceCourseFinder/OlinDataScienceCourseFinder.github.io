@@ -9,6 +9,7 @@ permalink: /major_test/
 		var majorshort = document.getElementsByTagName("option")[x].value;
 		var majorlong = document.getElementsByTagName("option")[x].text;
 		var link = concat('{{ site.baseurl }}/images/', majorshort, '_sw.png')
+		alert(link)
 	}
 </script>
 
@@ -23,14 +24,14 @@ permalink: /major_test/
 	<button type="button" onclick="search()">Search</button>
 
 	<section>
-		<h1>test</h1>
-		<img src=link> </img>
+		<h1>Mechanical Engineering</h1>
+		<img src="{{ site.baseurl }}/images/me_sw.png"> </img>
 	</section>
 	<section>
 		<h1>Electrical & Computer Engineering</h1>
 		<img src="{{ site.baseurl }}/images/me_sw.png"> </img>
 	</section>	
 
-	<!-- <h1>Engineering: Computer Science</h1>
-	<img src="{{ site.baseurl }}/images/me_sw.png"> </img> -->
+	<h1>Engineering: Computer Science</h1>
+	<img src="{{ site.baseurl }}/images/me_sw.png"> </img>
 </div>
