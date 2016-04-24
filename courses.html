@@ -6,7 +6,12 @@ permalink: /courses/
 
 <script>
     function updatePage() {
-        alert('changed');
+        var course = getCourse();
+        alert(course);
+    }
+    function getCourse() {
+        var element = document.getElementById('course-select');
+        return element.value;
     }
     function showCourse(courseName) {
     }
