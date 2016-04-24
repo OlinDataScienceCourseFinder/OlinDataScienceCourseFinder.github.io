@@ -7,13 +7,20 @@ permalink: /courses/
 <script>
     function updatePage() {
         var course = getCourse();
-        alert(course);
+        showCourse(course);
     }
     function getCourse() {
         var element = document.getElementById('course-select');
         return element.value;
     }
     function showCourse(courseName) {
+        var figs = document.getElementById('figures');
+
+        var para = document.createNode("p");
+        var text = document.createTextNode(courseName + " was selected!");
+        para.appendChild(text);
+
+        figs.appendChild(para);
     }
 </script>
 
@@ -1633,3 +1640,6 @@ permalink: /courses/
     <option>Sustainability Synthesis</option>
     <option>Sustainability Synthesis</option>
 </select>
+
+<div id="figures">
+</div>
