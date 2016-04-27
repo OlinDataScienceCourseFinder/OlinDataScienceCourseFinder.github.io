@@ -17,8 +17,8 @@ permalink: /courses/
         //showCourseDescription(courseName);
         showCourseSpider(courseName);
         showPValues(courseName);
-        //showYearProportion(courseName);
-        getOlinWebPage(name, code);
+        showYearProportion(courseName);
+        getOlinWebPage(courseName, code);
     }
 
     function getCourse() {
@@ -67,8 +67,8 @@ permalink: /courses/
         fig.src = file_name;
     }
     function showYearProportion(courseName) {
-        base_file_name = "{{ site.baseurl }}/" + 'images/courses/yearprop/';
-        safe_course_name = courseName.replace(/[\W]+/g, '_');
+        base_file_name = "{{ site.baseurl }}/" + 'images/stuyear/';
+        safe_course_name = 'stuyear_' + courseName.replace(/[\W]+/g, '_');
         file_name = base_file_name + safe_course_name + '.png';
 
         var fig = document.getElementById('yearprop');
