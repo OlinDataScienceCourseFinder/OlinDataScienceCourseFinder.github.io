@@ -33,8 +33,7 @@ permalink: /test2/
 
   var pie = d3.layout.pie()
       .sort(null)
-      .value(function(d) { return d.ade[1]; });
-      .value(function(d) { return d.scp[1]; });
+      .value(function(d) { return d.ade; });
 
   var svg = d3.select("body").append("svg")
       .attr("width", width)
@@ -60,10 +59,10 @@ permalink: /test2/
         .text(function(d) { return d.data.age; });
   });
 
-  function type(d){
-      d.ade = +d.ADE;
-      d.scp = +d.SCOPE;
-    }
+  function type(d) {
+    d.ade = +d.ADE;
+    d.scp = +d.SCOPE;
+    return d;
+  }
 
   </script>
-</body>
