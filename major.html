@@ -36,7 +36,7 @@ permalink: /major/
 	}
     function showMajor(major) {
         updateMajor(major[major.selectedIndex].text);
-        // updateMajorText(major.value);
+        updateMajorText(major.value);
         updateSWPlot(major.value);
         updateSAPlot(major.value);
     }
@@ -45,11 +45,11 @@ permalink: /major/
         title.textContent = majortext;
     }
 
-    // function updateMajorText(majorvalue) {
-    //     var desc = document.getElementById('t1')
-    //     desc.textContent = "More information on Major";
-    //     // desc.href = "http://www.olin.edu/course-catalog/program-specific-graduation-requirements/#" + majorvalue;
-    // }
+    function updateMajorText(majorvalue) {
+        var desc = document.getElementById('t1')
+        desc.textContent = "More information on Major";
+        desc.href = "http://www.olin.edu/course-catalog/program-specific-graduation-requirements/#" + majorvalue;
+    }
 
     function updateSWPlot(majorvalue) {
         var desc = document.getElementById('psw')
