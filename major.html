@@ -2,8 +2,28 @@
 layout: default
 permalink: /major/
 ---
-
 <script src="../d3.min.js">
+    d3.csv("../data/capstone.csv", type, function(error, data) {
+    if (error) throw error;
+    console.log(d[0].ece)
+    console.log(d[1].ece)
+    });
+
+    function type(d) {
+        d.ece = +d.ece;
+        d.me = +d.me;
+        d.cs = +d.cs;
+        d.bio = +d.bio;
+        d.design = +d.design;
+        d.robo = +d.robo;
+        d.system = +d.system;
+        d.matsci = +d.matsci;
+        d.selfd = +d.selfd;
+        d.eng = +d.eng;
+        return d;
+    }
+</script>
+<script>
 	function update() {
         var major = search();
         showMajor(major);
@@ -26,26 +46,6 @@ permalink: /major/
         var desc = document.getElementById('p1')
         desc.src = "{{ site.baseurl }}/images/major/sw/"+majorvalue+"_sw.png"
     }
-    
-    d3.csv("../data/capstone.csv", type, function(error, data) {
-    if (error) throw error;
-    console.log(d[0].ece)
-    console.log(d[1].ece)
-    });
-
-    function type(d) {
-        d.ece = +d.ece;
-        d.me = +d.me;
-        d.cs = +d.cs;
-        d.bio = +d.bio;
-        d.design = +d.design;
-        d.robo = +d.robo;
-        d.system = +d.system;
-        d.matsci = +d.matsci;
-        d.selfd = +d.selfd;
-        d.eng = +d.eng;
-        return d;
-    }
 
 </script>
 
@@ -59,7 +59,7 @@ permalink: /major/
 	<option value="system">Engineering: Systems</option>
 	<option value="matsci">Engineering: Material Science</option>
     <option value="selfd">Engineering: Self Designed</option>
-    <option value="eng">Engineering</option>
+    <option value="eng">Engineering: General</option>
 </select>
 
 <button type="button" onclick="update()">Search</button>
