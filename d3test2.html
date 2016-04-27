@@ -33,7 +33,7 @@ permalink: /test2/
 
   var pie = d3.layout.pie()
       .sort(null)
-      .value(function(d) { return d.ade; });
+      .value(function(d) { return d.ece; });
 
   var svg = d3.select("body").append("svg")
       .attr("width", width)
@@ -41,28 +41,27 @@ permalink: /test2/
     .append("g")
       .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-  d3.csv("../data/capstone.csv", type);
-  // , function(error, data) {
-  //   if (error) throw error;
+  d3.csv("../data/capstone.csv", type, function(error, data) {
+    if (error) throw error;
 
-  //   var g = svg.selectAll(".arc")
-  //       .data(pie(data))
-  //     .enter().append("g")
-  //       .attr("class", "arc");
+    var g = svg.selectAll(".arc")
+        .data(pie(data))
+      .enter().append("g")
+        .attr("class", "arc");
 
-  //   g.append("path")
-  //       .attr("d", arc)
-  //       .style("fill", function(d) { return color(d.data.age); });
+    g.append("path")
+        .attr("d", arc)
+        .style("fill", function(d) { return color(d.cap); });
 
-  //   g.append("text")
-  //       .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
-  //       .attr("dy", ".35em")
-  //       .text(function(d) { return d.data.age; });
-  // });
+    g.append("text")
+        .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
+        .attr("dy", ".35em")
+        .text(function(d) { return d.cap; });
+  });
 
   function type(d) {
-    d.ade = +d.ADE;
-    d.scp = +d.SCOPE;
+    d.system = +d.system;
+    d.ece = +d.ece;
     return d;
   }
 
