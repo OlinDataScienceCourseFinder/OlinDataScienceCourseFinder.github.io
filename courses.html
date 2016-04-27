@@ -46,6 +46,7 @@ permalink: /courses/
         req.send(null);
         req.onreadystatechange = function (state) {
             console.log(state);
+            console.log(req.responseText);
             if (state == 4) {
                 console.log(req.status);
                 if(req.status == 200)
