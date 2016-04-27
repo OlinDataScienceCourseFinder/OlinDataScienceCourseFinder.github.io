@@ -42,10 +42,10 @@ permalink: /courses/
 
     function getPage(url) {
         var req = new XMLHttpRequest();
-        req.open('GET', url, false);
+        req.open('GET', url, true);
         req.send(null);
         if(req.status == 200)
-           dump(req.responseText);
+           console.log(req.responseText);
     }
     function showCourseTitle(courseName) {
         var title = document.getElementById('course-title');
