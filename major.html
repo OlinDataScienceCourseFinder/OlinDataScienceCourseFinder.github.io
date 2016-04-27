@@ -2,6 +2,7 @@
 layout: default
 permalink: /major/
 ---
+<script src="../d3.min.js"></script>
 <script>
 	function update() {
         var major = search();
@@ -28,6 +29,19 @@ permalink: /major/
         var desc = document.getElementById('p1')
         desc.src = "{{ site.baseurl }}/images/major/sw/"+majorvalue+"_sw.png"
     }
+    
+    d3.csv("../data/capstone.csv", type, function(error, data) {
+    if (error) throw error;
+    console.log(d[0].ece)
+    console.log(d[1].ece)
+    });
+
+    function type(d) {
+        d.ece = +d.ece;
+        d.me = +d.me;
+        return d;
+    }
+
 </script>
 
 <select id = 'selectmajor'>
