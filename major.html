@@ -37,7 +37,8 @@ permalink: /major/
     function showMajor(major) {
         updateMajor(major[major.selectedIndex].text);
         updateMajorText(major.value);
-        updateMajorPlot(major.value);
+        updateSWPlot(major.value);
+        updateSAPlot(major.value);
     }
     function updateMajor(majortext) {
         var title = document.getElementById('h1');
@@ -50,9 +51,14 @@ permalink: /major/
         // desc.href = "http://www.olin.edu/course-catalog/program-specific-graduation-requirements/#" + major.value;
     }
 
-    function updateMajorPlot(majorvalue) {
+    function updateSWPlot(majorvalue) {
         var desc = document.getElementById('psw')
         desc.src = "{{ site.baseurl }}/images/major/sw/"+majorvalue+"_sw.png";
+    }
+
+    function updateSAPlot(majorvalue) {
+        var desc = document.getElementById('psa')
+        desc.src = "{{ site.baseurl }}/images/major/scopeade/"+majorvalue+"_sa.png";
     }
 
 </script>
@@ -76,4 +82,5 @@ permalink: /major/
     <h3 id='h1'></h3>
     <p id="t1"></p>
     <img id="psw"></img>
+    <img id="psa"></img>
 </div>
