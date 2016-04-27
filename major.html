@@ -2,27 +2,29 @@
 layout: default
 permalink: /major/
 ---
-// <script src="../d3.min.js">
-//     d3.csv("../data/capstone.csv", type, function(error, data) {
-//     if (error) throw error;
-//     console.log(d[0].ece)
-//     console.log(d[1].ece)
-//     });
+<!-- 
+<script src="../d3.min.js">
+    d3.csv("../data/capstone.csv", type, function(error, data) {
+    if (error) throw error;
+    console.log(d[0].ece)
+    console.log(d[1].ece)
+    });
 
-//     function type(d) {
-//         d.ece = +d.ece;
-//         d.me = +d.me;
-//         d.cs = +d.cs;
-//         d.bio = +d.bio;
-//         d.design = +d.design;
-//         d.robo = +d.robo;
-//         d.system = +d.system;
-//         d.matsci = +d.matsci;
-//         d.selfd = +d.selfd;
-//         d.eng = +d.eng;
-//         return d;
-//     }
-// </script>
+    function type(d) {
+        d.ece = +d.ece;
+        d.me = +d.me;
+        d.cs = +d.cs;
+        d.bio = +d.bio;
+        d.design = +d.design;
+        d.robo = +d.robo;
+        d.system = +d.system;
+        d.matsci = +d.matsci;
+        d.selfd = +d.selfd;
+        d.eng = +d.eng;
+        return d;
+    }
+</script>
+ -->
 <script>
 	function update() {
         var major = search();
@@ -35,22 +37,29 @@ permalink: /major/
     function showMajor(major) {
         updateMajor(major[major.selectedIndex].text);
         // updateMajorText(major.value);
-        updateMajorPlot(major.value);
+        updateSWPlot(major.value);
+        updateSAPlot(major.value);
     }
     function updateMajor(majortext) {
         var title = document.getElementById('h1');
         title.textContent = majortext;
     }
 
-    function updateMajorPlot(majorvalue) {
-        var desc = document.getElementById('p1')
-        desc.src = "{{ site.baseurl }}/images/major/sw/"+majorvalue+"_sw.png";
-    }
-    // function updateMajorTest(majorvalue) {
+    // function updateMajorText(majorvalue) {
     //     var desc = document.getElementById('t1')
     //     desc.textContent = "More information on Major";
-    //     desc.src = "http://www.olin.edu/course-catalog/program-specific-graduation-requirements/#" + major.value;
+    //     // desc.href = "http://www.olin.edu/course-catalog/program-specific-graduation-requirements/#" + majorvalue;
     // }
+
+    function updateSWPlot(majorvalue) {
+        var desc = document.getElementById('psw')
+        desc.src = "{{ site.baseurl }}/images/major/sw/"+majorvalue+"_sw.png";
+    }
+
+    function updateSAPlot(majorvalue) {
+        var desc = document.getElementById('psa')
+        desc.src = "{{ site.baseurl }}/images/major/sa/"+majorvalue+"_sa.png";
+    }
 
 </script>
 
@@ -71,6 +80,7 @@ permalink: /major/
 
 <div id="figures">
     <h3 id='h1'></h3>
-    <p id="t1"></p>
-    <img id="p1"></img>
+    <!-- <p id="t1"></p> -->
+    <img id="psw"></img>
+    <img id="psa"></img>
 </div>
