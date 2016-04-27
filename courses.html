@@ -10,14 +10,15 @@ permalink: /courses/
         alert(course);
         var name = course['name']
         var code = course['code']
-        showCourse(name);
+        showCourse(name, code);
     }
-    function showCourse(courseName) {
+    function showCourse(courseName, code) {
         showCourseTitle(courseName);
         //showCourseDescription(courseName);
         showCourseSpider(courseName);
         showPValues(courseName);
-        //showYearProportion(courseName);
+        showYearProportion(courseName);
+        getOlinWebPage(courseName, code);
     }
 
     function getCourse() {
@@ -25,6 +26,21 @@ permalink: /courses/
         var index = element.selectedIndex;
         var code = codes[index];
         return {'code':  code, 'name': element.value};
+    }
+    function getOlinWebPage(name, code) {
+        code = code.toLowerCase();
+        name = name.toLowerCase();
+        name_words = name.match(/\S+/g);
+        console.log(name_words);
+
+        base_url = "http://www.olin.edu/course-listing/";
+        url_name = name_words.join('-');
+        ending = code + '-' + url_name;
+        url = base_url + ending;
+        console.log(url);
+    }
+
+    function getPage(url) {
     }
     function showCourseTitle(courseName) {
         var title = document.getElementById('course-title');
@@ -51,8 +67,8 @@ permalink: /courses/
         fig.src = file_name;
     }
     function showYearProportion(courseName) {
-        base_file_name = "{{ site.baseurl }}/" + 'images/courses/yearprop/';
-        safe_course_name = courseName.replace(/[\W]+/g, '_');
+        base_file_name = "{{ site.baseurl }}/" + 'images/stuyear/';
+        safe_course_name = 'stuyear_' + courseName.replace(/[\W]+/g, '_');
         file_name = base_file_name + safe_course_name + '.png';
 
         var fig = document.getElementById('yearprop');
