@@ -2,27 +2,27 @@
 layout: default
 permalink: /major/
 ---
-<script src="../d3.min.js">
-    d3.csv("../data/capstone.csv", type, function(error, data) {
-    if (error) throw error;
-    console.log(d[0].ece)
-    console.log(d[1].ece)
-    });
+// <script src="../d3.min.js">
+//     d3.csv("../data/capstone.csv", type, function(error, data) {
+//     if (error) throw error;
+//     console.log(d[0].ece)
+//     console.log(d[1].ece)
+//     });
 
-    function type(d) {
-        d.ece = +d.ece;
-        d.me = +d.me;
-        d.cs = +d.cs;
-        d.bio = +d.bio;
-        d.design = +d.design;
-        d.robo = +d.robo;
-        d.system = +d.system;
-        d.matsci = +d.matsci;
-        d.selfd = +d.selfd;
-        d.eng = +d.eng;
-        return d;
-    }
-</script>
+//     function type(d) {
+//         d.ece = +d.ece;
+//         d.me = +d.me;
+//         d.cs = +d.cs;
+//         d.bio = +d.bio;
+//         d.design = +d.design;
+//         d.robo = +d.robo;
+//         d.system = +d.system;
+//         d.matsci = +d.matsci;
+//         d.selfd = +d.selfd;
+//         d.eng = +d.eng;
+//         return d;
+//     }
+// </script>
 <script>
 	function update() {
         var major = search();
@@ -34,7 +34,7 @@ permalink: /major/
 	}
     function showMajor(major) {
         updateMajor(major[major.selectedIndex].text);
-        updateMajorText(major.value);
+        // updateMajorText(major.value);
         updateMajorPlot(major.value);
     }
     function updateMajor(majortext) {
@@ -46,16 +46,16 @@ permalink: /major/
         var desc = document.getElementById('p1')
         desc.src = "{{ site.baseurl }}/images/major/sw/"+majorvalue+"_sw.png";
     }
-    function updateMajorTest(majorvalue) {
-        var desc = document.getElementById('t1')
-        desc.textContent = "More information on Major";
-        desc.src = "http://www.olin.edu/course-catalog/program-specific-graduation-requirements/#" + major.value;
-    }
+    // function updateMajorTest(majorvalue) {
+    //     var desc = document.getElementById('t1')
+    //     desc.textContent = "More information on Major";
+    //     desc.src = "http://www.olin.edu/course-catalog/program-specific-graduation-requirements/#" + major.value;
+    // }
 
 </script>
 
 <select id = 'selectmajor'>
-	<option value="ME"><a href = "http://www.olin.edu/course-catalog/program-specific-graduation-requirements/#ME">Mechanical Engineering</a></option>
+	<option value="ME">Mechanical Engineering</option>
 	<option value="ECE">Electrical & Computer Engineering</option>
 	<option value="EC">Engineering: Computer Science</option>
 	<option value="EBio">Engineering: Bioengineering</option>
