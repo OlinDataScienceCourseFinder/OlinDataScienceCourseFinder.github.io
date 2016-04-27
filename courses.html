@@ -51,7 +51,7 @@ permalink: /courses/
         var title = document.getElementById('course-title');
         title.textContent = courseName;
     }
-    function showCourseDescription(courseName) {
+    function showCourseDescription(courseName, code) {
         getOlinWebPage(courseName, code);
         var desc = document.getElementById('p1')
         desc.textContent = courseName + " was selected!";
