@@ -21,7 +21,7 @@ permalink: /courses/
 
     function getCourse() {
         var element = document.getElementById('course-select');
-        var index = element.selectedIndex();
+        var index = element.selectedIndex;
         var code = codes[index];
         return {'code':  code, 'name': element.value};
     }
