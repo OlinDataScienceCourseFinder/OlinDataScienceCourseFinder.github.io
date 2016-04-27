@@ -48,7 +48,7 @@ permalink: /major/
     function updateMajorText(majorvalue) {
         var desc = document.getElementById('t1')
         desc.textContent = "More information on Major";
-        // desc.href = "http://www.olin.edu/course-catalog/program-specific-graduation-requirements/#" + major.value;
+        // desc.href = "http://www.olin.edu/course-catalog/program-specific-graduation-requirements/#" + majorvalue;
     }
 
     function updateSWPlot(majorvalue) {
@@ -58,7 +58,7 @@ permalink: /major/
 
     function updateSAPlot(majorvalue) {
         var desc = document.getElementById('psa')
-        desc.src = "{{ site.baseurl }}/images/major/scopeade/"+majorvalue+"_sa.png";
+        desc.src = "{{ site.baseurl }}/images/major/sa/"+majorvalue+"_sa.png";
     }
 
 </script>
