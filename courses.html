@@ -14,11 +14,10 @@ permalink: /courses/
     }
     function showCourse(courseName, code) {
         showCourseTitle(courseName);
-        //showCourseDescription(courseName);
+        showCourseDescription(courseName, code);
         showCourseSpider(courseName);
         showPValues(courseName);
         showYearProportion(courseName);
-        getOlinWebPage(courseName, code);
     }
 
     function getCourse() {
@@ -38,15 +37,23 @@ permalink: /courses/
         ending = code + '-' + url_name;
         url = base_url + ending;
         console.log(url);
+
+        getPage(url);
     }
 
     function getPage(url) {
+        var req = new XMLHttpRequest();
+        req.open('GET', url, false);
+        req.send(null);
+        if(req.status == 200)
+           dump(req.responseText);
     }
     function showCourseTitle(courseName) {
         var title = document.getElementById('course-title');
         title.textContent = courseName;
     }
     function showCourseDescription(courseName) {
+        getOlinWebPage(courseName, code);
         var desc = document.getElementById('p1')
         desc.textContent = courseName + " was selected!";
     }
