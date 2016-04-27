@@ -12,7 +12,7 @@ permalink: /courses/
         showCourse(name, code);
     }
     function showCourse(courseName, code) {
-        showCourseTitle(courseName);
+        // showCourseTitle(courseName);
         // showCourseDescription(courseName, code);
         showCourseSpider(courseName);
         showPValues(courseName);
@@ -55,10 +55,10 @@ permalink: /courses/
     //     req.open('GET', url, true);
     //     req.send();
     // }
-    function showCourseTitle(courseName) {
-        var title = document.getElementById('course-title');
-        title.textContent = courseName;
-    }
+    // function showCourseTitle(courseName) {
+    //     var title = document.getElementById('course-title');
+    //     title.textContent = courseName;
+    // }
     function showCourseDescription(courseName, code) {
         getOlinWebPage(courseName, code);
         var desc = document.getElementById('p1')
@@ -596,9 +596,6 @@ permalink: /courses/
 <button type="button" onclick="updatePage()">Search</button>
 
 <div id="figures">
-    <h2 id='course-title'></h2>
-    <p id="p1"></p>
-
     <div>
         <h3>Distribution of Grade</h3>
         <img id='yearprop'></img>
