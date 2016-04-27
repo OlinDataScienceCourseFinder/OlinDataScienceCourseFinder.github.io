@@ -14,10 +14,15 @@ permalink: /courses/
     function showCourse(courseName, code) {
         // showCourseTitle(courseName);
         // showCourseDescription(courseName, code);
+        unhideContent();
         showCourseSpider(courseName);
         showPValues(courseName);
         showYearProportion(courseName);
         showCourseSize(courseName);
+    }
+    function unhideContent() {
+        var e = document.getElementById('figures');
+        e.style = "";
     }
 
     function getCourse() {
@@ -595,7 +600,7 @@ permalink: /courses/
 
 <button type="button" onclick="updatePage()">Search</button>
 
-<div id="figures">
+<div id="figures" style="display: none">
     <div>
         <h3>Distribution of Grade</h3>
         <img id='yearprop'></img>
