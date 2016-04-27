@@ -47,11 +47,11 @@ permalink: /major/
     function updateMajorText(majorvalue) {
         var desc = document.getElementById('t1')
         desc.textContent = "More information on Major";
-        desc.href = "http://www.olin.edu/course-catalog/program-specific-graduation-requirements/#" + major.value;
+        // desc.href = "http://www.olin.edu/course-catalog/program-specific-graduation-requirements/#" + major.value;
     }
 
     function updateMajorPlot(majorvalue) {
-        var desc = document.getElementById('p1')
+        var desc = document.getElementById('psw')
         desc.src = "{{ site.baseurl }}/images/major/sw/"+majorvalue+"_sw.png";
     }
 
@@ -75,5 +75,5 @@ permalink: /major/
 <div id="figures">
     <h3 id='h1'></h3>
     <p id="t1"></p>
-    <img id="p1"></img>
+    <img id="psw"></img>
 </div>
