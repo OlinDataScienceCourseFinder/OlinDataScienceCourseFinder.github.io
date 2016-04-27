@@ -44,7 +44,7 @@ permalink: /courses/
         var req = new XMLHttpRequest();
         req.open('GET', url, true);
         req.send(null);
-        req.onreadystatechange(function (state) {
+        req.onreadystatechange = function (state) {
             console.log(state);
             if (state == 4) {
                 console.log(req.status);
