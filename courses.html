@@ -44,9 +44,14 @@ permalink: /courses/
         var req = new XMLHttpRequest();
         req.open('GET', url, true);
         req.send(null);
-        console.log(req.status);
-        if(req.status == 200)
-           console.log(req.responseText);
+        req.onreadystatechange(function (state) {
+            console.log(state);
+            if (state == 4) {
+                console.log(req.status);
+                if(req.status == 200)
+                   console.log(req.responseText);
+            }
+        });
     }
     function showCourseTitle(courseName) {
         var title = document.getElementById('course-title');
