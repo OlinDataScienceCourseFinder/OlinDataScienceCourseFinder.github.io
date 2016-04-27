@@ -7,6 +7,7 @@ permalink: /courses/
 <script>
     function updatePage() {
         var course = getCourse();
+        alert(course);
         var name = course['name']
         var code = course['code']
         showCourse(name);
@@ -49,7 +50,7 @@ permalink: /courses/
         var fig = document.getElementById('pvalue');
         fig.src = file_name;
     }
-    function showPValues(courseName) {
+    function showYearProportion(courseName) {
         base_file_name = "{{ site.baseurl }}/" + 'images/courses/yearprop/';
         safe_course_name = courseName.replace(/[\W]+/g, '_');
         file_name = base_file_name + safe_course_name + '.png';
