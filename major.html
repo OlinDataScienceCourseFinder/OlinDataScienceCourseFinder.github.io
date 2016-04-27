@@ -21,10 +21,7 @@ permalink: /major/
         var title = document.getElementById('h1');
         title.textContent = majortext;
     }
-    // function updateMajorText(majorvalue) {
-    //     var desc = document.getElementById('t1')
-    //     desc.textContent = "{{ site.baseurl }}/images/"+majorvalue+"_sw.png"
-    // }
+
     function updateMajorPlot(majorvalue) {
         var desc = document.getElementById('p1')
         desc.src = "{{ site.baseurl }}/images/major/sw/"+majorvalue+"_sw.png"
@@ -39,6 +36,14 @@ permalink: /major/
     function type(d) {
         d.ece = +d.ece;
         d.me = +d.me;
+        d.cs = +d.cs;
+        d.bio = +d.bio;
+        d.design = +d.design;
+        d.robo = +d.robo;
+        d.system = +d.system;
+        d.matsci = +d.matsci;
+        d.selfd = +d.selfd;
+        d.eng = +d.eng;
         return d;
     }
 
@@ -53,6 +58,8 @@ permalink: /major/
 	<option value="robo">Engineering: Robotics</option>
 	<option value="system">Engineering: Systems</option>
 	<option value="matsci">Engineering: Material Science</option>
+    <option value="selfd">Engineering: Seld Designed</option>
+    <option value="eng">Engineering</option>
 </select>
 
 <button type="button" onclick="update()">Search</button>
