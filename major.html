@@ -34,7 +34,7 @@ permalink: /major/
 	}
     function showMajor(major) {
         updateMajor(major[major.selectedIndex].text);
-        // updateMajorText(major.value);
+        updateMajorText(major.value);
         updateMajorPlot(major.value);
     }
     function updateMajor(majortext) {
@@ -44,22 +44,27 @@ permalink: /major/
 
     function updateMajorPlot(majorvalue) {
         var desc = document.getElementById('p1')
-        desc.src = "{{ site.baseurl }}/images/major/sw/"+majorvalue+"_sw.png"
+        desc.src = "{{ site.baseurl }}/images/major/sw/"+majorvalue+"_sw.png";
+    }
+    function updateMajorTest(majorvalue) {
+        var desc = document.getElementById('t1')
+        desc.textContent = "More information on Major";
+        desc.src = "http://www.olin.edu/course-catalog/program-specific-graduation-requirements/#" + major.value;
     }
 
 </script>
 
 <select id = 'selectmajor'>
-	<option value="me"><a href = "http://www.olin.edu/course-catalog/program-specific-graduation-requirements/#ME">Mechanical Engineering</a></option>
-	<option value="ece"><a href = "http://www.olin.edu/course-catalog/program-specific-graduation-requirements/#ECE">Electrical & Computer Engineering</a></option>
-	<option value="cs">Engineering: Computer Science</option>
-	<option value="bio">Engineering: Bioengineering</option>
-	<option value="design">Engineering: Design</option>
-	<option value="robo">Engineering: Robotics</option>
-	<option value="system">Engineering: Systems</option>
-	<option value="matsci">Engineering: Material Science</option>
-    <option value="selfd">Engineering: Self Designed</option>
-    <option value="eng">Engineering: General</option>
+	<option value="ME"><a href = "http://www.olin.edu/course-catalog/program-specific-graduation-requirements/#ME">Mechanical Engineering</a></option>
+	<option value="ECE">Electrical & Computer Engineering</option>
+	<option value="EC">Engineering: Computer Science</option>
+	<option value="EBio">Engineering: Bioengineering</option>
+	<option value="ED">Engineering: Design</option>
+	<option value="ERobo">Engineering: Robotics</option>
+	<option value="ESys">Engineering: Systems</option>
+	<option value="EMS">Engineering: Material Science</option>
+    <option value="ES">Engineering: Self Designed</option>
+    <option value="E">Engineering: General</option>
 </select>
 
 <button type="button" onclick="update()">Search</button>
