@@ -55,6 +55,8 @@ permalink: /courses/
             console.log(text);
             callback(text);
         }
+        req.open('GET', url, true);
+        req.send();
     }
     function showCourseSpider(courseName) {
         base_file_name = "{{ site.baseurl }}/" + 'images/courses/spider/';
