@@ -45,7 +45,7 @@ permalink: /courses/
         console.log(fname);
         getText(fname, function (text) {
             var el = document.getElementById('credits');
-            el.textContent += text;
+            el.innerHTML += text;
         });
     }
     function showCourseHours(code) {
@@ -54,7 +54,7 @@ permalink: /courses/
         console.log(fname);
         getText(fname, function (text) {
             var el = document.getElementById('hours');
-            el.textContent += text;
+            el.innerHTML += text;
         });
     }
     function showCourseContact(code) {
@@ -63,7 +63,7 @@ permalink: /courses/
         console.log(fname);
         getText(fname, function (text) {
             var el = document.getElementById('contact');
-            el.textContent += text;
+            el.innerHTML += text;
         });
     }
     function showCourseLink(code) {
@@ -71,7 +71,7 @@ permalink: /courses/
         var fname = "{{ site.baseurl }}/" + "data/courses/course-links/" + code + ".txt";
         console.log(fname);
         getText(fname, function (text) {
-            var el = document.getElementById('course-link');
+            var el = document.getElementById('olin-link');
             el.href = text;
         });
     }
