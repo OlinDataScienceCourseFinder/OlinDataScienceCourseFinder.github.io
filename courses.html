@@ -35,9 +35,9 @@ permalink: /courses/
     }
     function showCourseInfo(courseName, code) {
         showCourseCredits(code);
-        // showCourseHours(code);
-        // showCourseContact(code);
-        // showCourseLink(code);
+        showCourseHours(code);
+        showCourseContact(code);
+        showCourseLink(code);
     }
     function showCourseCredits(code) {
         console.log("course credits" + code);
@@ -45,7 +45,34 @@ permalink: /courses/
         console.log(fname);
         getText(fname, function (text) {
             var el = document.getElementById('credits');
-            el.textContent = text;
+            el.textContent += text;
+        });
+    }
+    function showCourseHours(code) {
+        console.log("course hours" + code);
+        var fname = "{{ site.baseurl }}/" + "data/courses/course-hours/" + code + ".txt";
+        console.log(fname);
+        getText(fname, function (text) {
+            var el = document.getElementById('hours');
+            el.textContent += text;
+        });
+    }
+    function showCourseContact(code) {
+        console.log("course contact" + code);
+        var fname = "{{ site.baseurl }}/" + "data/courses/course-contacts/" + code + ".txt";
+        console.log(fname);
+        getText(fname, function (text) {
+            var el = document.getElementById('contact');
+            el.textContent += text;
+        });
+    }
+    function showCourseLink(code) {
+        console.log("course link" + code);
+        var fname = "{{ site.baseurl }}/" + "data/courses/course-links/" + code + ".txt";
+        console.log(fname);
+        getText(fname, function (text) {
+            var el = document.getElementById('course-link');
+            el.href = text;
         });
     }
     function getText(url, callback) {
@@ -591,15 +618,15 @@ permalink: /courses/
 
 <div id="figures" style="display: none">
     <div>
-        <div>
-            <strong>Credits:</strong> <p id='credits'></p>
-        </div>
-        <div>
-            <strong>Hours:</strong> <p id='hours'></p>
-        </div>
-        <div>
-            <strong>Contact:</strong> <p id='contact'></p>
-        </div>
+        <p id='credits'>
+            <strong>Credits: </strong>
+        </p>
+        <p id='hours'>
+            <strong>Hours: </strong>
+        </p>
+        <p id='contact'>
+            <strong>Contact: </strong>
+        </p>
         <div>
             <a id="olin-link">Olin Listing</a>
         </div>
