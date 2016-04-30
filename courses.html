@@ -85,7 +85,7 @@ permalink: /courses/
         console.log(fname);
         getText(fname, function (text) {
             var el = document.getElementById('description');
-            el.textContext = text;
+            el.textContent = text;
         });
     }
     function getText(url, callback) {
