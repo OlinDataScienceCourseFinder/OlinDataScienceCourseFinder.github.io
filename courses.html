@@ -41,9 +41,7 @@ permalink: /courses/
         showCourseDescription(code);
     }
     function showCourseCredits(code) {
-        console.log("course credits" + code);
         var fname = "{{ site.baseurl }}/" + "data/courses/course-credits/" + code + ".txt";
-        console.log(fname);
         getText(fname, function (text) {
             var el = document.getElementById('credits');
             content = "<strong>Credits: </strong> " + text;
@@ -51,9 +49,7 @@ permalink: /courses/
         });
     }
     function showCourseHours(code) {
-        console.log("course hours" + code);
         var fname = "{{ site.baseurl }}/" + "data/courses/course-hours/" + code + ".txt";
-        console.log(fname);
         getText(fname, function (text) {
             var el = document.getElementById('hours');
             content = "<strong>Hours: </strong> " + text;
@@ -61,9 +57,7 @@ permalink: /courses/
         });
     }
     function showCourseContact(code) {
-        console.log("course contact" + code);
         var fname = "{{ site.baseurl }}/" + "data/courses/course-contacts/" + code + ".txt";
-        console.log(fname);
         getText(fname, function (text) {
             var el = document.getElementById('contact');
             content = "<strong>Contact: </strong> " + text;
@@ -71,18 +65,14 @@ permalink: /courses/
         });
     }
     function showCourseLink(code) {
-        console.log("course link" + code);
         var fname = "{{ site.baseurl }}/" + "data/courses/course-links/" + code + ".txt";
-        console.log(fname);
         getText(fname, function (text) {
             var el = document.getElementById('olin-link');
             el.href = text;
         });
     }
     function showCourseDescription(code) {
-        console.log("course description" + code);
         var fname = "{{ site.baseurl }}/" + "data/courses/course-descriptions/" + code + ".txt";
-        console.log(fname);
         getText(fname, function (text) {
             var el = document.getElementById('description');
             el.textContent = text;
@@ -95,7 +85,6 @@ permalink: /courses/
             if (req.status == 200) {
                 var text = req.responseText;
             }
-            console.log(text);
             callback(text);
         }
         req.open('GET', url, true);
