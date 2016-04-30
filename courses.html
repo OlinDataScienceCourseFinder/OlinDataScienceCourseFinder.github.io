@@ -14,11 +14,13 @@ permalink: /courses/
     function showCourse(courseName, code) {
         // showCourseTitle(courseName);
         // showCourseDescription(courseName, code);
-        unhideContent();
+        code = code.toLowerCase();
+        showCourseInfo(courseName, code);
         showCourseSpider(courseName);
         showPValues(courseName);
         showYearProportion(courseName);
         showCourseSize(courseName);
+        unhideContent();
     }
     function unhideContent() {
         var e = document.getElementById('figures');
@@ -64,6 +66,27 @@ permalink: /courses/
     //     var title = document.getElementById('course-title');
     //     title.textContent = courseName;
     // }
+    function showCourseInfo(courseName, code) {
+        showCourseCredits(code);
+        // showCourseHours(code);
+        // showCourseContact(code);
+        // showCourseLink(code);
+    }
+    function showCourseCredits(code) {
+        var fname = "{{ site.baseurl }}/" + "data/courses/course-credits/" + code
+        getText(fname, function (text) {
+            var el = document.getElementById('credits');
+            el.textContent = text;
+        });
+    }
+    function getText(url, callback) {
+        var req = new XMLHttpRequest();
+        req.onload = function () {
+            var text = req.responseText;
+            console.log(text);
+            callback(text);
+        }
+    }
     function showCourseDescription(courseName, code) {
         getOlinWebPage(courseName, code);
         var desc = document.getElementById('p1')
@@ -602,18 +625,18 @@ permalink: /courses/
 
 <div id="figures" style="display: none">
     <div>
-        <p>
+        <div>
             <strong>Credits:</strong> <p id='credits'></p>
-        </p>
-        <p>
+        </div>
+        <div>
             <strong>Hours:</strong> <p id='hours'></p>
-        </p>
-        <p>
+        </div>
+        <div>
             <strong>Contact:</strong> <p id='contact'></p>
-        </p>
-        <p>
+        </div>
+        <div>
             <a id="olin-link">Olin Listing</a>
-        </p>
+        </div>
         <p id="description"></p>
     </div>
     <table>
