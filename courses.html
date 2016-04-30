@@ -38,6 +38,7 @@ permalink: /courses/
         showCourseHours(code);
         showCourseContact(code);
         showCourseLink(code);
+        showCourseDescription(code);
     }
     function showCourseCredits(code) {
         console.log("course credits" + code);
@@ -75,13 +76,22 @@ permalink: /courses/
             el.href = text;
         });
     }
+    function showCourseDescription(code) {
+        console.log("course description" + code);
+        var fname = "{{ site.baseurl }}/" + "data/courses/course-descriptions/" + code + ".txt";
+        console.log(fname);
+        getText(fname, function (text) {
+            var el = document.getElementById('description');
+            el.textContext = text;
+        });
+    }
     function getText(url, callback) {
         var req = new XMLHttpRequest();
         req.onload = function () {
-            if (req.status != 200) {
-                return;
+            var text = '';
+            if (req.status == 200) {
+                var text = req.responseText;
             }
-            var text = req.responseText;
             console.log(text);
             callback(text);
         }
