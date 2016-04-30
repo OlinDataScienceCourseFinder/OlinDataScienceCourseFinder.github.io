@@ -1,0 +1,1 @@
+This course provides an introduction to the analysis of functions in the complex plane. Topics include the Cauchy-Riemann equations, conformal mapping, Cauchy-Goursat theorem, Taylor-Laurent series, the residue theorem, Nyquist criterion, continuation of analytic functions, and applications in science and engineering.

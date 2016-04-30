@@ -41,7 +41,7 @@ permalink: /courses/
     }
     function showCourseCredits(code) {
         console.log("course credits" + code);
-        var fname = "{{ site.baseurl }}/" + "data/courses/course-credits/" + code;
+        var fname = "{{ site.baseurl }}/" + "data/courses/course-credits/" + code + ".txt";
         console.log(fname);
         getText(fname, function (text) {
             var el = document.getElementById('credits');

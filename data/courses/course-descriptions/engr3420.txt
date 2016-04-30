@@ -1,0 +1,1 @@
+This course teaches students design techniques for analog and digital communications, including elementary coding and information theory. Topics also include modulation schemes, data compression, error detection and correction, encryption, transmitter and receiver design, and routing protocols. Students build an operative communications link over an unreliable channel.

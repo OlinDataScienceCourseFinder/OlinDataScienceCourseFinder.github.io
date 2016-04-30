@@ -1,0 +1,1 @@
+Topics for this course include combinatorics, number theory, graph theory, an emphasis on creative problem solving, and the ability to read and write rigorous proofs.

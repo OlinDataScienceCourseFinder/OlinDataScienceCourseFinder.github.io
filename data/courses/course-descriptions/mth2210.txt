@@ -1,0 +1,1 @@
+The fundamentals of linear algebra and differential equations are taught through the lens of discrete- and continuous-time dynamical systems.  Applications such as population ecology, mechanics and dynamics, circuits, networks, information processing and/or other areas relevant to engineering will be stressed.

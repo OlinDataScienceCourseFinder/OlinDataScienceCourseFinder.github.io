@@ -1,0 +1,6 @@
+This laboratory-based course introduces students to the relationships among structure, processing, properties, and performance of solid state materials including metals, ceramics, polymers, composites, and semiconductors. Topics include atomic structure and bonding, crystallography, diffusion, defects, equilibrium, solubility, phase transformations, and electrical, magnetic, thermal, optical and mechanical properties. Students apply materials science principles in laboratory projects that emphasize experimental design and data analysis, examination of material composition and structure, measurement and modification of material properties, and connection of material behavior to performance in engineering applications. The course is offered in four "flavors." Each flavor has a different emphasis in some of the course projects, but all course flavors provide for significant student choice in project topics and experimental processes.
+A. Historical Context (co-taught with AHSE 2110)
+B. Environmental and Societal Impact of Materials
+C. Biomaterials, Polymers and Mechanical Properties
+D. Electrical and Magnetic Properties 
+Course flavors will be differentiated by the appropriate letter as a prefix to the section. The course number will be SCI 1410 for all versions.

@@ -1,0 +1,1 @@
+This course introduces a broad range of computation structures used in computation, from logic gates to specialized (e.g. DSP, cellular automata) as well as general purpose architectures. Design techniques for quantitatively optimizing performance are also taught. Students build a computer from the ground up.

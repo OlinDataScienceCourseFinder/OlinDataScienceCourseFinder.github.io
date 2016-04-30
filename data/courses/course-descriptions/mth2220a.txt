@@ -1,0 +1,4 @@
+This two credit Linearity II version is taught along with SCI1121: Electricity
+and Magnetism using a project based approach.
+Linearity II is intradisciplinary in nature and builds upon material covered in Linearity 1
+to address topics in vector calculus and introductory partial differential equations.  Topics include functions of more than one variable; vector-valued functions; gradient, divergence, and curl; boundaryvalue problems; and solutions to common partial differential equations.  Emphasis on both numerical and analytical approaches.

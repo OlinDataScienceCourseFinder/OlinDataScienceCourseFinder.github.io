@@ -1,0 +1,2 @@
+This course will provide an overview of mixed signal testing methodologies, exposure to more advanced integrated circuit topics, and an opportunity to test the custom chips designed in
+MADVLSI I through the design and fabrication of a custom printed circuit board (PCB) featuring their own integrated circuit. Students will participate in collaborative teaching of some advanced topics in a seminar-style format.
