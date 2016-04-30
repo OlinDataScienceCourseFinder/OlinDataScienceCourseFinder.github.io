@@ -78,6 +78,9 @@ permalink: /courses/
     function getText(url, callback) {
         var req = new XMLHttpRequest();
         req.onload = function () {
+            if (req.status != 200) {
+                return;
+            }
             var text = req.responseText;
             console.log(text);
             callback(text);
