@@ -15,9 +15,7 @@ Course registration is coming up and TJ can’t decide which classes to take. Th
 
 ### Comparing Average Class Size
 
-<img src="mth2110_numstu.png" alt="Drawing" style="width: 200px;"/>
-
-![Average Class Size Immunology]({{ site.baseurl }}/images/sci2210_numstu.png =400x)
+<img src="{{ site.baseurl }}/images/mth2110_numstu.png" alt="Average Class Size Discrete Math" style="width: 400px;"/> <img src="{{ site.baseurl }}/images/ci2210_numstu.png" alt="Average Class Size Immunology" style="width: 400px;"/>
 
 ### Comparing Average Class Student Year
 
