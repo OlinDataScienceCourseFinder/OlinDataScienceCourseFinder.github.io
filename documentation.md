@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Project Documentation Documentation
+title: Project Documentation
 permalink: /documentation/
 ---
-
-# Final Documentation
 
 ## Main Findings and Outcomes
 
