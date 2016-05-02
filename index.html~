@@ -18,6 +18,8 @@ layout: default
 	misassumptions, false predictions, and regrets plague the stories many students tell others in their advice. However, 
 	soley basing your course registration preperation on discussion may be dangerous as rumors over-represent certain classes and under-represent others, as shown by the graph below.</p>
 
+
+
 <p>
     <img src="{{ site.baseurl }}/images/biasedpmf.png" alt="Biased PMF Graph" style="width: 700px;"/>
     <em>Graph of Actual Average Class Size vs. Percieved Class Size</em>
