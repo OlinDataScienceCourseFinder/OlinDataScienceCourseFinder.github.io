@@ -21,11 +21,9 @@ Course registration is coming up and TJ can’t decide which classes to take. Th
 
 <img src="{{ site.baseurl }}/images/mth2110_year.png" alt="Average Class Student Year Discrete Math" style="width: 350px;"/> <img src="{{ site.baseurl }}/images/sci2210_year.png" alt="Average Class Student Year Immunology" style="width: 350px;"/>
 
-
 ### Observing Class P-Value to Major
 
-![Class P-Value to Major Discrete Math]({{ site.baseurl }}/images/mth2110_pvalue.png =400x)
-![Class P-Value to Major Immunology]({{ site.baseurl }}/images/sci2210_pvalue.png = 400x)
+<img src="{{ site.baseurl }}/images/mth2110_pvalue.png" alt="Class P-Value to Major Discrete Math" style="width: 350px;"/> <img src="{{ site.baseurl }}/images/sci2210_pvalue.png" alt="Class P-Value to Major Immunology" style="width: 350px;"/>
 
 The figures above help TJ to make his decision. He sees that Immunology has a smaller class size, which he likes. On the other hand, Discrete Math is much more important for his major. Both courses are mainly taken by juniors. Now that TJ understands these factors he can make a more educated decision. He chooses to take Discrete Math in order to fulfill his requirements.
 
@@ -33,17 +31,10 @@ The figures above help TJ to make his decision. He sees that Immunology has a sm
 
 As an ECE major, TJ wants to observe how the courses he took lines up with an average ECE major at Olin by observing the spider diagram that maps each major’s average number of classes taken in each category.
 
-![Bio Spiderweb Diagram]({{ site.baseurl }}/images/bio_spider.png = 200x)
 
-![Design Spiderweb Diagram]({{ site.baseurl }}/images/desn_spider.png = 200x)
+<img src="{{ site.baseurl }}/images/bio_spider.png" alt="Bio Spiderweb Diagram" style="width: 200px;"/> <img src="{{ site.baseurl }}/images/desn_spider.png" alt="Design Spiderweb Diagram" style="width: 200px;"/> <img src="{{ site.baseurl }}/images/ec_spider.png" alt="EC Spiderweb Diagram" style="width: 200px;"/>
 
-![EC Spiderweb Diagram]({{ site.baseurl }}/images/ec_spider.png = 200x)
-
-![ECE Spiderweb Diagram]({{ site.baseurl }}/images/ece_spider.png = 200x)
-
-![Material Science Spiderweb Diagram]({{ site.baseurl }}/images/matsci_spider.png = 200x)
-
-![Mechanical Spiderweb Diagram]({{ site.baseurl }}/images/me_spider.png = 200x)
+<img src="{{ site.baseurl }}/images/ece_spider.png" alt="ECE Spiderweb Diagram" style="width: 200px;"/> <img src="{{ site.baseurl }}/images/matsci_spider.png" alt="Material Science Spiderweb Diagram" style="width: 200px;"/> <img src="{{ site.baseurl }}/images/me_spider.png" alt="Mechanical Spiderweb Diagram" style="width: 200px;"/>
 
 He also takes a look at how many students take either Scope of ADE based upon their major.
 
@@ -52,6 +43,14 @@ He also takes a look at how many students take either Scope of ADE based upon th
 ![Mechanical Scope ADE Pie]({{ site.baseurl }}/images/ME_sa.png = 200x)
 
 ![Design Scope ADE Pie]({{ site.baseurl }}/images/ED_sa.png = 200x)
+
+<img src="{{ site.baseurl }}/images/bio_spider.png" alt="Bio Spiderweb Diagram" style="width: 200px;"/> 
+
+<img src="{{ site.baseurl }}/images/desn_spider.png" alt="Design Spiderweb Diagram" style="width: 200px;"/>
+
+<img src="{{ site.baseurl }}/images/ec_spider.png" alt="EC Spiderweb Diagram" style="width: 200px;"/>
+
+
 
 TJ thinks taking Scope may be a good idea, as the majority of the ECEs choose to do so.
 

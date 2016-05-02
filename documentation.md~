@@ -19,17 +19,11 @@ Course registration is coming up and TJ can’t decide which classes to take. Th
 
 ### Comparing Average Class Student Year
 
-![Average Class Student Year Discrete Math]({{ site.baseurl }}/images/mth2110_year.png =400x)
-
-![Average Class Student Year Immunology]({{ site.baseurl }}/images/sci2210_year.png =400x)
-
 <img src="{{ site.baseurl }}/images/mth2110_year.png" alt="Average Class Student Year Discrete Math" style="width: 350px;"/> <img src="{{ site.baseurl }}/images/sci2210_year.png" alt="Average Class Student Year Immunology" style="width: 350px;"/>
-
 
 ### Observing Class P-Value to Major
 
-![Class P-Value to Major Discrete Math]({{ site.baseurl }}/images/mth2110_pvalue.png =400x)
-![Class P-Value to Major Immunology]({{ site.baseurl }}/images/sci2210_pvalue.png = 400x)
+<img src="{{ site.baseurl }}/images/mth2110_pvalue.png" alt="Class P-Value to Major Discrete Math" style="width: 350px;"/> <img src="{{ site.baseurl }}/images/sci2210_pvalue.png" alt="Class P-Value to Major Immunology" style="width: 350px;"/>
 
 The figures above help TJ to make his decision. He sees that Immunology has a smaller class size, which he likes. On the other hand, Discrete Math is much more important for his major. Both courses are mainly taken by juniors. Now that TJ understands these factors he can make a more educated decision. He chooses to take Discrete Math in order to fulfill his requirements.
 
@@ -37,11 +31,17 @@ The figures above help TJ to make his decision. He sees that Immunology has a sm
 
 As an ECE major, TJ wants to observe how the courses he took lines up with an average ECE major at Olin by observing the spider diagram that maps each major’s average number of classes taken in each category.
 
-![Bio Spiderweb Diagram]({{ site.baseurl }}/images/bio_spider.png = 200x)
-
-![Design Spiderweb Diagram]({{ site.baseurl }}/images/desn_spider.png = 200x)
-
 ![EC Spiderweb Diagram]({{ site.baseurl }}/images/ec_spider.png = 200x)
+
+<img src="{{ site.baseurl }}/images/bio_spider.png" alt="Bio Spiderweb Diagram" style="width: 200px;"/> 
+
+<img src="{{ site.baseurl }}/images/desn_spider.png" alt="Design Spiderweb Diagram" style="width: 200px;"/>
+
+<img src="{{ site.baseurl }}/images/sci2210_pvalue.png" alt="Class P-Value to Major Immunology" style="width: 200px;"/>
+
+
+
+
 
 ![ECE Spiderweb Diagram]({{ site.baseurl }}/images/ece_spider.png = 200x)
 
