@@ -32,17 +32,13 @@ The figures above help TJ to make his decision. He sees that Immunology has a sm
 As an ECE major, TJ wants to observe how the courses he took lines up with an average ECE major at Olin by observing the spider diagram that maps each major’s average number of classes taken in each category.
 
 
-<img src="{{ site.baseurl }}/images/bio_spider.png" alt="Bio Spiderweb Diagram" style="width: 200px;"/> <img src="{{ site.baseurl }}/images/desn_spider.png" alt="Design Spiderweb Diagram" style="width: 200px;"/> <img src="{{ site.baseurl }}/images/ec_spider.png" alt="EC Spiderweb Diagram" style="width: 200px;"/>
+<img src="{{ site.baseurl }}/images/bio_spider.png" alt="Bio Spiderweb Diagram" style="width: 220px;"/> <img src="{{ site.baseurl }}/images/desn_spider.png" alt="Design Spiderweb Diagram" style="width: 220px;"/> <img src="{{ site.baseurl }}/images/ec_spider.png" alt="EC Spiderweb Diagram" style="width: 220px;"/>
 
-<img src="{{ site.baseurl }}/images/ece_spider.png" alt="ECE Spiderweb Diagram" style="width: 200px;"/> <img src="{{ site.baseurl }}/images/matsci_spider.png" alt="Material Science Spiderweb Diagram" style="width: 200px;"/> <img src="{{ site.baseurl }}/images/me_spider.png" alt="Mechanical Spiderweb Diagram" style="width: 200px;"/>
+<img src="{{ site.baseurl }}/images/ece_spider.png" alt="ECE Spiderweb Diagram" style="width: 220px;"/> <img src="{{ site.baseurl }}/images/matsci_spider.png" alt="Material Science Spiderweb Diagram" style="width: 220px;"/> <img src="{{ site.baseurl }}/images/me_spider.png" alt="Mechanical Spiderweb Diagram" style="width: 220px;"/>
 
 He also takes a look at how many students take either Scope of ADE based upon their major.
 
-<img src="{{ site.baseurl }}/images/ECE_sa.png" alt="ECE Scope ADE Pie" style="width: 200px;"/> 
-
-<img src="{{ site.baseurl }}/images/ME_sa.png" alt="Mechanical Scope ADE Pie" style="width: 200px;"/>
-
-<img src="{{ site.baseurl }}/images/ED_sa.png" alt="Design Scope ADE Pie" style="width: 200px;"/>
+<img src="{{ site.baseurl }}/images/ECE_sa.png" alt="ECE Scope ADE Pie" style="width: 220px;"/> <img src="{{ site.baseurl }}/images/ME_sa.png" alt="Mechanical Scope ADE Pie" style="width: 220px;"/> <img src="{{ site.baseurl }}/images/ED_sa.png" alt="Design Scope ADE Pie" style="width: 220px;"/>
 
 
 TJ thinks taking Scope may be a good idea, as the majority of the ECEs choose to do so.
