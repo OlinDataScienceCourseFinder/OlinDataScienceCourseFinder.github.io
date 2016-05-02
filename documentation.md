@@ -15,13 +15,12 @@ Course registration is coming up and TJ can’t decide which classes to take. Th
 
 ### Comparing Average Class Size
 
-<img src="{{ site.baseurl }}/images/mth2110_numstu.png" alt="Average Class Size Discrete Math" style="width: 400px;"/> <img src="{{ site.baseurl }}/images/ci2210_numstu.png" alt="Average Class Size Immunology" style="width: 400px;"/>
+<img src="{{ site.baseurl }}/images/mth2110_numstu.png" alt="Average Class Size Discrete Math" style="width: 350px;"/> <img src="{{ site.baseurl }}/images/sci2210_numstu.png" alt="Average Class Size Immunology" style="width: 350px;"/>
 
 ### Comparing Average Class Student Year
 
-![Average Class Student Year Discrete Math]({{ site.baseurl }}/images/mth2110_year.png =400x)
+<img src="{{ site.baseurl }}/images/mth2110_year.png" alt="Average Class Student Year Discrete Math" style="width: 350px;"/> <img src="{{ site.baseurl }}/images/sci2210_year.png" alt="Average Class Student Year Immunology" style="width: 350px;"/>
 
-![Average Class Student Year Immunology]({{ site.baseurl }}/images/sci2210_year.png =400x)
 
 ### Observing Class P-Value to Major
 
