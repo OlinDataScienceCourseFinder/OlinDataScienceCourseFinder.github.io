@@ -38,18 +38,11 @@ As an ECE major, TJ wants to observe how the courses he took lines up with an av
 
 He also takes a look at how many students take either Scope of ADE based upon their major.
 
-![ECE Scope ADE Pie]({{ site.baseurl }}/images/ECE_sa.png = 200x)
+<img src="{{ site.baseurl }}/images/ECE_sa.png" alt="ECE Scope ADE Pie" style="width: 200px;"/> 
 
-![Mechanical Scope ADE Pie]({{ site.baseurl }}/images/ME_sa.png = 200x)
+<img src="{{ site.baseurl }}/images/ME_sa.png" alt="Mechanical Scope ADE Pie" style="width: 200px;"/>
 
-![Design Scope ADE Pie]({{ site.baseurl }}/images/ED_sa.png = 200x)
-
-<img src="{{ site.baseurl }}/images/bio_spider.png" alt="Bio Spiderweb Diagram" style="width: 200px;"/> 
-
-<img src="{{ site.baseurl }}/images/desn_spider.png" alt="Design Spiderweb Diagram" style="width: 200px;"/>
-
-<img src="{{ site.baseurl }}/images/ec_spider.png" alt="EC Spiderweb Diagram" style="width: 200px;"/>
-
+<img src="{{ site.baseurl }}/images/ED_sa.png" alt="Design Scope ADE Pie" style="width: 200px;"/>
 
 
 TJ thinks taking Scope may be a good idea, as the majority of the ECEs choose to do so.
