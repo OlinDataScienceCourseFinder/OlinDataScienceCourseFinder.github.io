@@ -51,7 +51,21 @@ This portion covers the basic techniques we used during our tool development pro
 
 ### Data Cleaning
 
+During the data cleaning process, we used thorough analysis skills to predict what sort of new dataframe files we could derive from the original one. The original data set included every instance of a student taking a specific course, during a specific semester. Therefore, the data was very redundant and hard to navigate through. Therefore, we used the Pandas library to filter the data each based around a different index. 
+
+For example, the student index held information on each student: when they attended Olin, which classes they took, what major they were, and so forth. We generated such csv files for students, professors, majors, and specific courses, in order to streamline our statistical analysis and machine learning process in future steps.
+
 ### Statistical Techniques
 
-### Machine Learning Techniques
+Mean and standard deviation, major components of statistics, were used in this project to describe class size and average student years. Using the newly generated dataframe files, we iterated through each class and the number of students it had throughout the years to get the mean and standard deviation on each class. We also looped through each instance of a student taking a specific course to pull together information on the course of interest and the year of the student together to obtain the mean and standard deviation of the year the student took the course.
+
+We also implemented the P-value of statistics to observe from the sample of students, how the taking of specific courses relate to the major they select. The P-value represents the odds of a certain event happening given the “null hypothesis” as true. For example, in order to see if the course Signals and Systems was taken more often by students who had a specific major beyond the possibility of chance, we would claim the null hypothesis as saying every major has an equal chance of taking Signals and Systems. After analysing the sample of students and their classes, we can see that Signals and Systems have a P-value lower than 0.05 for ECE students. We often use 0.05 as a cutoff for observing whether the effect occurred by chance or not. 
+
+### Machine Learnng Techniques
+
+Clustering was used to find possible trends that the computer learn based on enrollment data. The enrollment data shows the classes students have taken in Olin. The axes of the cluster graph are arbitrary and are a summary of the many different variables the relationship between the student and courses summarized into two axes. 
+
+Logistic regression was used to predict the major based on the courses the students have taken. The enrollment data was divided up into freshman, sophomore, junior and seniors enrollment data. These datasets were used to train separate models for different grades. Random forest classifier and logistic regression algorithms were used for predicting all the major at once since all the values are either true or false. However, this resulted in a very low accuracy for freshman and sophomores. Therefore, we moved on to predicting for each major separately and this boosted up our accuracy. We’ve trained the models for every major and grade and pickled them for further use - possibly on a website.
+
+It is important to realize that the machine learning techniques are not accessible to the user due to different issues. The machine learning was more of a stretch goal where we explored beyond the scope of the project to try and blend statistics and machine learning together. Moreover, in order to present the machine learning experience the user to interact with, although the data used was trained algorithm, there is potential for privacy issues when offering the machine learning functions to the users.
 
